@@ -1,4 +1,4 @@
-# zookeeper-cluster-client
+# zk-cluster-client
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -25,7 +25,7 @@ Support [cluster-client](https://www.npmjs.com/package/cluster-client) process m
 ## Install
 
 ```bash
-npm i zookeeper-cluster-client --save
+npm i zk-cluster-client --save
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ npm i zookeeper-cluster-client --save
 1\. Create a node using given path:
 
 ```js
-const zookeeper = require('zookeeper-cluster-client');
+const zookeeper = require('zk-cluster-client');
 const client = zookeeper.createClient('localhost:2181');
 const path = process.argv[2];
 
@@ -49,7 +49,7 @@ client.connect();
 2\. List and watch the children of given node:
 
 ```js
-const zookeeper = require('zookeeper-cluster-client');
+const zookeeper = require('zk-cluster-client');
 const client = zookeeper.createClient('localhost:2181');
 const path = process.argv[2];
 
